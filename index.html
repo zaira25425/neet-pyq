@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEET PYQ Simulator</title>
+<script>
+  // Phones/tablets -> mobile build; computers -> desktop build.
+  var isMobile = window.matchMedia('(max-width: 820px)').matches
+              || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+  window.location.replace(isMobile ? 'mobile.html' : 'desktop.html');
+</script>
+</head>
+<body>
+  <p style="font-family:sans-serif;text-align:center;margin-top:40px">
+    Loading the simulator… <a href="desktop.html">click here</a> if it does not redirect.
+  </p>
+</body>
+</html>
